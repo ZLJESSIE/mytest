@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        .tab>li{
+            float: left;
+        }
+        ul a{
+            display: block;
+            text-decoration: none;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            color: white;
+            background-color: black;
+        }
+        .tab>li:first-child a{
+            border-radius: 10px 0 0 10px;
+        }
+        .tab>li:last-child a{
+            border-radius: 0 10px 10px 0;
+        }
+        .tab-down{
+            position: relative;
+        }
+        .tab-down_detail{
+            padding: 0;
+            display: none;
+            position: absolute;
+        }
+        
+        h3{
+            font-size: 30px;
+            clear: both;
+        }
+        .tab-down_detail li:hover a{
+            background-color:red;
+        }
+        .tab .tab-down:hover .tab-down_detail{
+            display: block;
+        }
+</style>
+</head>
+<body>
+    <ul class="tab">
+        <li><a href="#">首页</a></li>
+        <li class="tab-down"><a href="#">百度新闻</a>
+            <ul class="tab-down_detail">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+            </ul>
+            </li>
+        <li><a href="#">百度音乐</a></li>
+        <li><a href="#">百度地图</a></li>
+        <li><a href="#">百度图片</a></li>
+    </ul>
+</body>
+</html>
